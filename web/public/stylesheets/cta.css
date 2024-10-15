@@ -1,43 +1,35 @@
 section#cta{
-
-    min-height:50vh;
-    background-image: url(https://picsum.photos/800);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position:relative;
-  
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    position:relative;
+    min-height: 75vh;
+
   
   
+    div.content{
+      z-index:1;
+      max-width: var(--site-width);
+    }
   
     h1{
-      font-size: 3rem;
+      font-size: clamp( 1.2rem, var(--font-size-h1), 5rem);
+      color: var(--font-color-description);
     }
   
     p{
-      font-size:1.5rem;
+      font-size:calc( clamp( 1.2rem, var(--font-size-h1), 5rem) / 2.5);
+      margin-bottom: 2.5rem;
+      line-height: 2rem;
+      max-width: 80%;
+      margin: auto;
+      margin-block-end: 1.5rem;
     }
-  
     a{
-      font-size:2rem;
-      border:solid 2px white;
-      padding:1rem 2rem;
-      background-color: black;
-      border-radius: 4px;
-      color:white;
-      text-decoration: none;
-      transition: all 1s;
-  
-      &:hover{ 
-        border: 2px solid black;
-        background-color: white;
-        color:black;
-      }
+        margin-left: 1rem;
+
     }
   
   }
